@@ -1,12 +1,15 @@
 package herencia.ejercici1;
 
+import java.time.LocalDate;
+
 import herencia.ejercici2.CuentaCorriente;
+import herencia.ejercicio3.ProductoPerecedero;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		//ejercicio 1
+		System.out.println("Ejercicio 1");
 		Estudiante estudiante1 = new Estudiante ("Carlos", 17, "Cr123" );
 		
 		estudiante1.mostrar();
@@ -15,8 +18,8 @@ public class Main {
 		
 		docente1.mostrar();
 		
-		//ejercicio 2
 		
+		System.out.println("Ejercicio 2");
 		CuentaCorriente cuenta1 = new CuentaCorriente ("Marcelo", 1000, 500 );
 		cuenta1.retirar(800); //Prueba de sobregiro 
 		System.out.println(cuenta1);
@@ -26,5 +29,9 @@ public class Main {
 		
 		cuenta1.retirar(200);//Denegar el retiro
 		System.out.println(cuenta1);
+		
+		System.out.println("Ejercicio 3");
+		ProductoPerecedero producto1 = new ProductoPerecedero ("Yogurt", 15.50, LocalDate.of(2026,12,4) );
+		System.out.println(producto1 + " | ¿Vencido?: " + (producto1.estaVencido() ? "SÍ" : "NO"));
 	}
 }
