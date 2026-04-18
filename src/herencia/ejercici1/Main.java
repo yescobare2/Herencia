@@ -6,6 +6,7 @@ import herencia.ejercici2.CuentaCorriente;
 import herencia.ejercicio3.ProductoPerecedero;
 import herencia.ejercicio4.Bus;
 import herencia.ejercicio5.Gerente;
+import herencia.ejerciio6.Perro;
 
 public class Main {
 
@@ -41,6 +42,9 @@ public class Main {
 		System.out.println("Ejercicio 5");
 		Gerente gerente1 = new Gerente ("Franklin", 10000, 500);
 		System.out.println(gerente1);
-	
+		
+		System.out.println("Ejercicio 6");
+	    Perro perro1 = new Perro();
+	    perro1.hacerSonido();
 }
 }
