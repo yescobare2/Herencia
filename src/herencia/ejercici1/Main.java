@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import herencia.ejercici2.CuentaCorriente;
 import herencia.ejercicio3.ProductoPerecedero;
+import herencia.ejercicio4.Bus;
 
 public class Main {
 
@@ -11,11 +12,9 @@ public class Main {
 		
 		System.out.println("Ejercicio 1");
 		Estudiante estudiante1 = new Estudiante ("Carlos", 17, "Cr123" );
-		
 		estudiante1.mostrar();
 		
 		Docente docente1 = new Docente ("Juan",39, "Calculo" );
-		
 		docente1.mostrar();
 		
 		
@@ -33,5 +32,10 @@ public class Main {
 		System.out.println("Ejercicio 3");
 		ProductoPerecedero producto1 = new ProductoPerecedero ("Yogurt", 15.50, LocalDate.of(2026,12,4) );
 		System.out.println(producto1 + " | ¿Vencido?: " + (producto1.estaVencido() ? "SÍ" : "NO"));
-	}
+		
+		System.out.println("Ejercicio 4");
+		Bus bus1 = new Bus (30, "Ruta del Caribe");
+		System.out.println(bus1 );
+	
+}
 }
