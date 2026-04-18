@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import herencia.ejercici2.CuentaCorriente;
 import herencia.ejercicio3.ProductoPerecedero;
 import herencia.ejercicio4.Bus;
+import herencia.ejercicio5.Gerente;
 
 public class Main {
 
@@ -36,6 +37,10 @@ public class Main {
 		System.out.println("Ejercicio 4");
 		Bus bus1 = new Bus (30, "Ruta del Caribe");
 		System.out.println(bus1 );
+		
+		System.out.println("Ejercicio 5");
+		Gerente gerente1 = new Gerente ("Franklin", 10000, 500);
+		System.out.println(gerente1);
 	
 }
 }
